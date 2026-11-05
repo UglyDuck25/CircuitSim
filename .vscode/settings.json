@@ -1,0 +1,10 @@
+{
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/samuel/CircuitSim",
+            "binaryPath": "/home/samuel/CircuitSim/init",
+            "binaryArgs": []
+        }
+    ]
+}
