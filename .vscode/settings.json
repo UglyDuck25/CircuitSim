@@ -3,8 +3,10 @@
     "makefile.launchConfigurations": [
         {
             "cwd": "/home/samuel/CircuitSim",
-            "binaryPath": "/home/samuel/CircuitSim/init",
-            "binaryArgs": []
+            "binaryPath": "/home/samuel/CircuitSim/parser",
+            "binaryArgs": ["input_sample.txt"],
+            "name": "Run Parser",
+            "preLaunchTask": "make"
         }
     ]
 }
