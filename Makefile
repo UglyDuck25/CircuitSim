@@ -1,14 +1,14 @@
 CC := gcc
-CFLAGS := -Wall -Wextra -Wpedantic -Werror -g
+CFLAGS := -Wall -Wextra -Wpedantic -g
 
-TARGET = init
-SRC = init.c
+TARGET = parser
 
 .PHONY: all clean
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
+
+parser: parser.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:

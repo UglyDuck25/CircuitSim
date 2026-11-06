@@ -78,8 +78,13 @@ In this example:
 -   `.END` marks the end of the netlist.
 
 The exact grammar, accepted units, naming rules, and error behaviour
-will be documented in the project's netlist specification before the
-parser is implemented.
+are currently limited to the following parser input:
+
+- Resistors use `Rname node1 node2 integer-value`.
+- Independent DC voltage and current sources use
+  `Vname/Iname node1 node2 DC integer-value`.
+- Component names must be unique; resistor values must be positive.
+
 
 ## Intended Application Workflow
 
@@ -167,7 +172,7 @@ The first release should be able to:
 
 ## Project Status
 
-**Current stage:** Planning and requirements definition.
+**Current stage:** Initial netlist parsing and data-model implementation.
 
-The next task is to finalize the netlist grammar and the initial C data
-structures before implementing the parser.
+Build with `make` and run `./init [netlist-file]`. If no file is supplied,
+the program reads `input_sample.txt`.
